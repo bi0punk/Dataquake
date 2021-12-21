@@ -1,17 +1,15 @@
 from datetime import MINYEAR
 from flask import Flask, render_template, request, redirect, url_for, flash
+from matplotlib.figure import Figure
 from flask_mysqldb import MySQL
 from folium.map import Popup
-from matplotlib.figure import Figure
-
-import pandas
-import json
-from typing import Text
-import bs4
-import requests
-import pandas as pd 
-import base64
 from io import BytesIO
+from typing import Text
+import pandas as pd 
+import requests
+import base64
+import json
+import bs4
 import re
 
 
