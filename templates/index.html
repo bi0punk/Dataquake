@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zxx"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hospital</title>
+
+    <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <!-- themefy CSS -->
+    <link rel="stylesheet" href="static/css/themify-icons.css">
+    <!-- swiper slider CSS -->
+    <link rel="stylesheet" href="static/css/swiper.css">
+    <!-- select2 CSS -->
+    <link rel="stylesheet" href="static/css/select2.css">
+    <!-- select2 CSS -->
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="static/css/owl.css">
+    <!-- gijgo css -->
+    <link rel="stylesheet" href="static/css/gijgo.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="static/css/tagsinput.css">
+    <!-- datatable CSS -->
+    <link rel="stylesheet" href="static/css/jquery.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <link rel="stylesheet" href="static/css/buttons.css">
+    <!-- text editor css -->
+    <link rel="stylesheet" href="static/css/summernote-bs4.css">
+    <!-- morris css -->
+    <link rel="stylesheet" href="static/css/morris.css">
+    <!-- metarial icon css -->
+    <link rel="stylesheet" href="static/css/material-icons.css">
+
+    <!-- menu css  -->
+    <link rel="stylesheet" href="static/css/metisMenu.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/default.css" id="colorSkinCSS">
+    <link rel="stylesheet" href="static/css/main.css">
+
+<body class="crm_body_bg">
+    
+
+
+<!-- main content part here -->
+ 
+ <!-- sidebar  -->
+ <!-- sidebar part here -->
+<nav class="sidebar">
+    <div class="logo d-flex justify-content-between">
+        <a href="#"><img src="/logo.png" alt=""></a>
+        <div class="sidebar_close_icon d-lg-none">
+            <i class="ti-close"></i>
+        </div>
+    </div>
+    <ul id="sidebar_menu" class="metismenu">
+        <li class="side_menu_title">
+            <span>Dashboard</span>
+          </li>
+        <li class="mm-active">
+          <a class="has-arrow" href="#" aria-expanded="true">
+          <!-- <i class="fas fa-th"></i> -->
+          <img src="index_2_data/1.svg" alt="">
+            <span>Dashboard</span>
+          </a>
+          <ul class="mm-collapse mm-show">
+            <li><a href="https://demo.dashboardpack.com/hospital-html/index.html">Dashboard </a></li>
+            <li><a class="active" href="https://demo.dashboardpack.com/hospital-html/index_2.html">Dashboard 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    
+</nav>
+<!-- sidebar part end -->
+ <!--/ sidebar  -->
+
+
+
+
+
+
+
+
+
+
+ 
+<section class="main_content dashboard_part">
+        <!-- menu  -->
+    <div class="container-fluid no-gutters">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="header_iner d-flex justify-content-between align-items-center">
+                    <div class="sidebar_icon d-lg-none">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="serach_field-area">
+                            <div class="search_inner">
+                                <form action="#">
+                                    <div class="search_field">
+                                        <input type="text" placeholder="Search here...">
+                                    </div>
+                                    <button type="submit"> <img src="index_2_data/icon_search.svg" alt=""> </button>
+                                </form>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ menu  -->
+    <div class="main_content_iner ">
+        <div class="container-fluid p-0">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="single_element">
+                        <div class="quick_activity">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="quick_activity_wrap quick_activity_wrap">
+                                        <div class="single_quick_activity  d-flex">
+                                            <div class="count_content count_content2">
+                                                  <p>Ultimo Registrado</p>
+                                                  <br>
+                                                  
+                                                <h3><span class="counter blue_color">{{ ult_sis }}</span> </h3>
+                                                <br>
+                                                <p><b>{{ lug_ult_reg  }}</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="single_quick_activity d-flex">
+                                            <div class="count_content count_content2">
+                                                <h3><span class="counter red_color">6969</span> </h3>
+                                                <p>Nurses</p>
+                                            </div>
+                                        </div>
+                                        <div class="single_quick_activity  d-flex">
+                                            <div class="count_content count_content2">
+                                                <h3><span class="counter yellow_color">7509</span> </h3>
+                                                <p>Patients</p>
+                                            </div>
+                                        </div>
+                                        <div class="single_quick_activity  d-flex">
+                                            <div class="count_content count_content2">
+                                                <h3><span class="counter green_color">2110</span> </h3>
+                                                <p>Pharmacusts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="white_box card_height_100">
+                        <div class="box_header border_bottom_1px  ">
+                            <div class="main-title">
+                                <h3 class="mb_25">Recent Activity</h3>
+                            </div>
+                        </div>
+                        <div class="Activity_timeline">
+                            <ul>
+                                <li>
+                                    <div class="activity_bell"></div>
+                                    <div class="activity_wrap">
+                                        <h6>5 min ago</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="white_box mb_30">
+                        <div class="box_header border_bottom_1px  ">
+                            <div class="main-title">
+                                <h3 class="mb_25">Recent Activity</h3>
+                            </div>
+                        </div>
+                        <div class="activity_progressbar">
+                            <div class="single_progressbar">
+                                <h6>USA</h6>
+                                <div id="bar1" class="barfiller">
+                                    <div class="tipWrap" style="display: inline;">
+                                        <span class="tip" style="left: 550.192px; transition: left 3s ease-in-out 0s;">95%</span>
+                                    </div>
+                                    <span class="fill" data-percentage="95" style="background: rgb(8, 155, 171) none repeat scroll 0% 0%; width: 572.375px; transition: width 3s ease-in-out 0s;"></span>
+                                </div>
+                            </div>
+                            <div class="single_progressbar">
+                                <h6>AFRICA</h6>
+                                <div id="bar2" class="barfiller">
+                                    <div class="tipWrap" style="display: inline;">
+                                        <span class="tip" style="left: 430.625px; transition: left 3s ease-in-out 0s;">75%</span>
+                                    </div>
+                                    <span class="fill" data-percentage="75" style="background: rgb(40, 167, 69) none repeat scroll 0% 0%; width: 451.875px; transition: width 3s ease-in-out 0s;"></span>
+                                </div>
+                            </div>
+                            <div class="single_progressbar">
+                                <h6>UK</h6>
+                                <div id="bar3" class="barfiller">
+                                    <div class="tipWrap" style="display: inline;">
+                                        <span class="tip" style="left: 309.225px; transition: left 3s ease-in-out 0s;">55%</span>
+                                    </div>
+                                    <span class="fill" data-percentage="55" style="background: rgb(255, 193, 7) none repeat scroll 0% 0%; width: 331.375px; transition: width 3s ease-in-out 0s;"></span>
+                                </div>
+                            </div>
+                            <div class="single_progressbar">
+                                <h6>CANADA</h6>
+                                <div id="bar4" class="barfiller">
+                                    <div class="tipWrap" style="display: inline;">
+                                        <span class="tip" style="left: 129.058px; transition: left 3s ease-in-out 0s;">25%</span>
+                                    </div>
+                                    <span class="fill" data-percentage="25" style="background: rgb(220, 53, 69) none repeat scroll 0% 0%; width: 150.625px; transition: width 3s ease-in-out 0s;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12 col-xl-12">
+                    <div class="white_box mb_30 " style="position: relative;">
+                        <div class="box_header border_bottom_1px  ">
+                            <div class="main-title">
+                                <h3 class="mb_25">Hospital Survey</h3>
+                            </div>
+                        </div>
+                        <div class="income_servay">
+                            <div class="row">
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="bar_wev" style="min-height: 365px;"><div id="apexchartspixbdtt" class="apexcharts-canvas apexchartspixbdtt apexcharts-theme-light apexcharts-zoomable" style="width: 1295px; height: 350px;"><div class="apexcharts-legend"></div><div class="apexcharts-tooltip apexcharts-theme-light" style="left: 235.539px; top: 112.625px;"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;">01 May</div><div class="apexcharts-tooltip-series-group apexcharts-active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 143, 251);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Cash Flow: </span><span class="apexcharts-tooltip-text-value">-13%</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                    <div class="resize-triggers"><div class="expand-trigger"><div style="width: 1356px; height: 506px;"></div></div><div class="contract-trigger"></div></div></div>
+                </div>
+                <div class="col-xl-7">
+                    
+                </div>
+                <div class="col-xl-5 ">
+                    
+                    
+                </div>
+                <div class="col-xl-12">
+                    
+                </div>
+               
+               
+            </div>
+        </div>
+    </div>
+
+<!-- footer part -->
+<div class="footer_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_iner text-center">
+                    <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Dashboard</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- main content part end -->
+
+<!-- footer  -->
+<!-- jquery slim -->
+<script src="index_2_data/jquery-3.js"></script>
+<!-- popper js -->
+<script src="index_2_data/popper.js"></script>
+<!-- bootstarp js -->
+<script src="index_2_data/bootstrap.js"></script>
+<!-- sidebar menu  -->
+<script src="index_2_data/metisMenu.js"></script>
+<!-- waypoints js -->
+<script src="index_2_data/jquery.js"></script>
+<!-- waypoints js -->
+<script src="index_2_data/Chart.js"></script>
+<!-- counterup js -->
+<script src="index_2_data/jquery_002.js"></script>
+<!-- swiper slider js -->
+<script src="index_2_data/swiper.js"></script>
+<!-- nice select -->
+<script src="index_2_data/jquery_005.js"></script>
+<!-- owl carousel -->
+<script src="index_2_data/owl.js"></script>
+<!-- gijgo css -->
+<script src="index_2_data/gijgo.js"></script>
+<!-- responsive table -->
+<script src="index_2_data/jquery_004.js"></script>
+<script src="index_2_data/dataTables_002.js"></script>
+<script src="index_2_data/dataTables.js"></script>
+<script src="index_2_data/buttons_002.js"></script>
+<script src="index_2_data/jszip.js"></script>
+<script src="index_2_data/pdfmake.js"></script>
+<script src="index_2_data/vfs_fonts.js"></script>
+<script src="index_2_data/buttons.js"></script>
+<script src="index_2_data/buttons_003.js"></script>
+
+<script src="index_2_data/chart.js"></script>
+<!-- progressbar js -->
+<script src="index_2_data/jquery_003.js"></script>
+<!-- tag input -->
+<script src="index_2_data/tagsinput.js"></script>
+<!-- text editor js -->
+<script src="index_2_data/summernote-bs4.js"></script>
+
+<script src="index_2_data/apexcharts.js"></script>
+
+<!-- custom js -->
+<script src="index_2_data/custom.js"></script>
+
+<script src="index_2_data/bar_active_1.js"></script>
+<script src="index_2_data/apex_chart_list.js"></script>
+
+<svg id="SvgjsSvg1246" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xlink="http://www.w3.org/1999/xlink" svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1247"></defs><polyline id="SvgjsPolyline1248" points="0,0"></polyline><path id="SvgjsPath1249" d="M-1 173.21016166281754L-1 173.21016166281754L54.11111111111111 173.21016166281754L108.22222222222221 173.21016166281754L162.33333333333331 173.21016166281754L216.44444444444443 173.21016166281754L270.55555555555554 173.21016166281754L324.66666666666663 173.21016166281754L378.77777777777777 173.21016166281754L432.88888888888886 173.21016166281754L487 173.21016166281754C487 173.21016166281754 487 173.21016166281754 487 173.21016166281754 "></path></svg></body></html>
