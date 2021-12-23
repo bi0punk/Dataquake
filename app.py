@@ -72,6 +72,8 @@ def sismos():
     df['Longitud'] = df['Longitud'].astype(float)
     df['Profundidad [Km]'] = df['Profundidad [Km]'].astype(float)
 
+    print(df)
+
 
 
     """ convertimos columna magnitud a lista, para poder obtener solo  numeros flotantes
