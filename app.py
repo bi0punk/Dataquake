@@ -11,6 +11,14 @@ import base64
 import json
 import bs4
 import re
+from io import BytesIO
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import io
+
+
+
 
 import folium
 
@@ -40,6 +48,7 @@ app.secret_key = "mysecretkey"
 
 @app.route("/")
 def sismos():
+    img = io.BytesIO()
     cabezeras= []
     fuente_dat = 'http://www.sismologia.cl/ultimos_sismos.html'
     page = requests.get(fuente_dat)
@@ -121,22 +130,22 @@ def sismos():
     max_reg_unit = (str(max_reg) + ' ' + magnitud)
     min_reg_unit = (str(min_reg) + ' ' + magnitud)
 
-    map = folium.Map(location=[-26.416057, 152.983540], tiles="Stamen Terrain", zoom_start=10)
-    map
 
 
-
-
-
-    return render_template('index.html',  
+    map = folium.Map(location=[-34.007, -70.307],popup = 'Epicentro' ,tiles="Stamen Terrain", zoom_start=10)
     
+
+    return render_template('index.html',
+    
+    map=map._repr_html_(),
     ult_sis = ult_sis,
     lug_ult_reg = lug_ult_reg , 
     min_prof  = min_prof, 
     min_reg_unit = min_reg_unit,
     max_reg_unit = max_reg_unit,
 
-    
+
+
     tables=[df.to_html(classes='data', header="false")])
 
     
