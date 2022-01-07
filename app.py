@@ -81,9 +81,6 @@ def sismos():
     df['Longitud'] = df['Longitud'].astype(float)
     df['Profundidad [Km]'] = df['Profundidad [Km]'].astype(float)
 
-    print(df)
-
-
 
     """ convertimos columna magnitud a lista, para poder obtener solo  numeros flotantes
     ya que muestra en la tabla tiene el siguiente formato 3.2 Ml """
@@ -137,8 +134,8 @@ def sismos():
     pop = "Epicentro"
 
     iframe = folium.IFrame(pop,
-                       width=600,
-                       height=350)
+                       width=100,
+                       height=50)
 
     popup = folium.Popup(iframe,
                      max_width=100)
@@ -146,10 +143,6 @@ def sismos():
     marker = folium.Marker([-34.007, -70.307],
                        popup=popup).add_to(map)
 
-
-
-
-    
 
     return render_template('index.html',
     
@@ -168,17 +161,10 @@ def sismos():
 
 
 
-
-
-
-
-
 if __name__=="__main__":
     app.run(debug=True)
 
 
 """ print(min_prof)  """
-
-
 
 """ transformamos columna magnitud a lista para poder quitar cadenas """
