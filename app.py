@@ -12,7 +12,7 @@ import json
 import bs4
 import re
 
-
+import folium
 
 app = Flask(__name__)
 
@@ -60,7 +60,7 @@ def sismos():
         df.loc[length] = filas_info
 
     #nombres de lugares sismos dashboard
-
+    ref_geo = (df['Referencia GeogrÃ¡fica'])
     lug_ult_reg = (df['Referencia GeogrÃ¡fica'][0]) 
 
     
@@ -86,15 +86,12 @@ def sismos():
     flotantes.sort()
 
 
+
     #  LOGICA ULTIMO REGISTRADO #
 
 
     ult_sis = ''
     ult_sis = max_mag_list[0]                     
-
-
-
-
 
     #  LOGICA MENOS PROFUNDO #
     
@@ -103,15 +100,9 @@ def sismos():
 
     km = 'Kilómetros'
 
-
-
-
     #  LOGICA MAGNITUD MAS BAJA #
-
     min_reg = ''
     min_reg = flotantes[0]
-
-
 
     #  LOGICA MAGNITUD MAS ALTA #
     max_reg= ''
@@ -130,9 +121,12 @@ def sismos():
     max_reg_unit = (str(max_reg) + ' ' + magnitud)
     min_reg_unit = (str(min_reg) + ' ' + magnitud)
 
+    map = folium.Map(location=[-26.416057, 152.983540], tiles="Stamen Terrain", zoom_start=10)
+    map
 
 
-    
+
+
 
     return render_template('index.html',  
     
@@ -145,6 +139,12 @@ def sismos():
     
     tables=[df.to_html(classes='data', header="false")])
 
+    
+
+
+
+
+
 
 
 
@@ -153,9 +153,6 @@ if __name__=="__main__":
 
 
 """ print(min_prof)  """
-
-    
-
 
 
 
