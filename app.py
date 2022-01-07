@@ -132,7 +132,23 @@ def sismos():
 
 
 
-    map = folium.Map(location=[-34.007, -70.307],popup = 'Epicentro' ,tiles="Stamen Terrain", zoom_start=10)
+    map = folium.Map(location=[-34.007, -70.307],popup = 'Epicentro' ,tiles="Stamen Terrain", zoom_start=9)
+
+    pop = "Epicentro"
+
+    iframe = folium.IFrame(pop,
+                       width=600,
+                       height=350)
+
+    popup = folium.Popup(iframe,
+                     max_width=100)
+
+    marker = folium.Marker([-34.007, -70.307],
+                       popup=popup).add_to(map)
+
+
+
+
     
 
     return render_template('index.html',
