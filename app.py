@@ -17,9 +17,6 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import io
 
-
-
-
 import folium
 
 app = Flask(__name__)
@@ -30,21 +27,6 @@ app.config['MYSQL_USER'] = ''
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = ''
 mysql = MySQL(app)
-
-
-app.secret_key = "mysecretkey"
-
-
-# ~ @app.route('/')
-# ~ def Index():
-    # ~ cur = mysql.connection.cursor()
-    # ~ cur.execute('SELECT * FROM sismos')
-    # ~ data = cur.fetchall()
-    # ~ print(data)
-    # ~ cur.close()
-    # ~ return render_template('index.html', sismo = data)
-
-
 
 @app.route("/")
 def sismos():
